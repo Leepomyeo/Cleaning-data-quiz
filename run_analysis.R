@@ -1,7 +1,7 @@
 # Download the zip file and get file ready
 fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 download.file(fileUrl,destfile = "data_cleaning_project.zip",method = "curl")
-unzip(zzipfile = "data_cleaning_project.zip")
+unzip("data_cleaning_project.zip")
 
 # Read the required lables
 activity_lable <- read.table("UCI HAR Dataset/activity_labels.txt",sep = " ",col.names = c("activitylables","activityname"))
